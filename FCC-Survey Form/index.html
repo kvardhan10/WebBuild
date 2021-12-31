@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <title>Survey Form | FCC Project</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form for FCC Project on RWD</h1>
+      <p id="description">Generic design for a feedback form</p><hr>
+    </header>
+      <div class="form">
+        <form id="survey-form" action="index.html" method="post">
+          <fieldset>
+          <legend>Survey Form</legend>
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" name="name" placeholder="Your Name" id="name" required><br>
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" name="email" placeholder="Your Email" id="email" required><br>
+            <label for="number" id="number-label">Customer ID</label><br>
+            <input type="number" id="number" name="customerid" placeholder="xxxx" pattern="[0-9]{4}" required min="0000" max="9999"><br>
+            <label for="radio">Occupation</label><br>
+            <input type="radio" name="radio" id="radio" value="radio1">Student<br>
+            <input type="radio" name="radio" id="radio" value="radio2">Employed<br>
+            <input type="radio" name="radio" id="radio" value="radio3">Retired<br>
+            <label for="check">Skills</label><br>
+            <input type="checkbox" name="check1" id="check" value="check1">HTML<br>
+            <input type="checkbox" name="check2" id="check" value="check2">CSS<br>
+            <input type="checkbox" name="check3" id="check" value="check3">JAVASCRIPT<br>
+            <input type="checkbox" name="check4" id="check" value="check4">PYTHON<br>
+            <input type="checkbox" name="check5" id="check" value="check5">C/C++<br>
+            <label for="dropdown">Experience (in Years)</label><br>
+            <select id="dropdown" name="dropdown">
+              <option value="one" disabled selected>Choose one</option>
+              <option value="rwo"> <2 </option>
+              <option value="three"> 3-7 </option>
+              <option value="four"> 7+ </option>
+            </select><br>
+            <label for="feedback">Feedback</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Your valuable feedback"></textarea><br>
+            <label for="suggestion">Suggestion</label><br>
+            <textarea id="suggestion" name="suggestion" rows="4" cols="50" placeholder="Help us improve. Any suggestions"></textarea><br>
+          <button type="submit" name="button" id="submit">SUBMIT</button>
+        </fieldset>
+        </form>
+      </div>
+    <hr> <footer>Copyright &copy; 2021 KV <br> Designed for <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">RWD Course Project on FreeCodeCamp</a></footer>
+  </body>
+</html>
