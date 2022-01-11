@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Railway Booking System</title>
+  </head>
+  <body>
+    <script src="script.js" charset="utf-8"></script>
+    <header>
+      <img src="logo.png" alt="logo image" class="logo">
+      <nav>
+        <ul class="nav_links">
+          <li> <a href="#">Book Now</a> </li>
+          <li> <a href="#">My Bookings</a> </li>
+          <li> <a href="#">Account</a> </li>
+        </ul>
+      </nav>
+      <a href="#" class="cta"> <button>Logout</button> </a>
+    </header>
+    <button class="addpass" onclick="addpass()">Add New Passenger</button>
+    <button class="addchild" onclick="addchild()">Add New Child</button>
+    <button class="delbtn" onclick="delpass()">Delete Passenger</button>
+    <button class="delbtn2" onclick="delchild()">Delete Child</button>
+    <main class="main_content">
+
+      <form class="form_details" action="index.html" method="post">
+        <h3>Travel Details</h3>
+        <label>Train Number</label> <input type="tel" name="tnum" placeholder="Train Number" pattern="[0-9]{5}" required> <br>
+        <label>Source</label><input type="text" name="From" placeholder="From" required>
+        <label>  Destination</label><input type="text" name="to" placeholder="To" required> <br>
+        <label for="class">Select your travel class</label>
+        <select id="class" name="class" required>
+          <option value="ec">Executive Chair Class (EC)</option>
+          <option value="1ac">First Class (1AC)</option>
+          <option value="2ac">Two-Tier Class (2AC)</option>
+          <option value="3ac">Three-Tier Class (3AC)</option>
+          <option value="fc">First Class (FC)</option>
+          <option value="2s">Second Class (2S)</option>
+          <option value="sl">Sleeper Class (SL)</option>
+        </select> <br>
+        <label>Date of Journey</label> <input type="date" name="doj" required>
+        <!-- start here -->
+
+        <!-- end here -->
+        <hr> <h3>Payment Details</h3>
+        <div class="payment">
+          <h5>Pay using UPI ID</h5>
+          <section>
+            <button type="submit" name="button"><i class="fab fa-cc-paypal fa-3x"></i></button>
+            <button type="submit" name="button"><i class="fab fa-cc-amazon-pay fa-3x"></i></button>
+
+          </section>
+
+          <h5>or use Debit Card</h5>
+          <section>
+            <button type="submit" name="button"><i class="fab fa-cc-visa fa-3x"></i></button>
+            <button type="submit" name="button"><i class="fab fa-cc-mastercard fa-3x"></i></button>
+
+          </section>
+        </div><br>
+        <input type="submit" name="confirm" value="GENERATE TICKETS" class="pay">
+
+
+
+      </form>
+
+      <div class="right">
+          <a href="#"><i class="fas fa-search fa-lg"></i></a>
+          <a href="#"><i class="fas fa-history fa-lg"></i></a>
+      </div>
+    </main>
+    <hr> <h3>Passenger Details</h3>
+    <div class="newcontainers" id="newcontainers"></div>
+    <footer id="footer">
+      <p> &copy; Copyright 2021 ADISHK</p>
+      <p>Online Railway Booking System</p>
+    </footer>
+  </body>
+</html>

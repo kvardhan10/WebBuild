@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #b3b3ff;
+}
+li, a,button{
+  font-family: 'Poppins',sans-serif;
+  font-variant: small-caps;
+  font-weight:400;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+header{
+  display: flex;
+  background-color: #884dff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  box-shadow: 0 3px 10px 8px rgba(100, 100, 100,0.5);
+  width: auto;
+}
+button{
+  padding:3px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #1a75ff;
+  transition: all 0.5s ease 0s;
+}
+button:hover{
+  background-color: #005ce6;
+}
+.nav_links{
+  list-style: none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+  color: #1a75ff;
+  font-weight: bolder;
+}
+.logo{
+  cursor: pointer;
+}
+.main_content{
+  margin: 3rem 1rem 1rem 25vw;
+  border: 4px solid  #884dff;
+  padding:2rem;
+  border-radius: 1rem;
+  width: 50vw;
+}
+h3{
+  text-align: center;
+  font-variant: small-caps;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 24px;
+  margin: 1rem 0;
+}
+label{
+  font-family: Poppins,sans-serif;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+hr{
+  margin-top: 1rem;
+}
+input{
+  margin-top: 1rem;
+  padding:.5rem;
+}
+select{
+  padding:.5rem;
+  margin-top: 1rem;
+}
+.payment{
+  padding:1rem;
+  text-align: center;
+}
+.payment section{
+  display: flex;
+  justify-content: space-around;
+}
+.payment button{
+  background-color: #884dff;
+  color: white;
+}
+.payment button:hover{
+  transform: scale(1.1);
+}
+h5{
+  font-size: 14px;
+  margin: 1rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+.pay{
+  display: block;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  padding: 1rem 4rem;
+  border-radius: 30px;
+  background-color: #1a75ff;
+  transition: all 0.5s ease 0s;
+  margin-left: 17vw;
+}
+.pay:hover{
+  background-color: #005ce6;
+}
+footer{
+  background-color: #884dff;
+  margin-top:3rem;
+  padding:10px;
+  box-shadow: 0 -5px 10px 8px rgba(100,100,100,0.5);
+}
+
+footer p{
+  font-family:monospace;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
+.name{
+  font-variant: small-caps;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top:49%;
+  right:2%;
+}
+.right i{
+  margin-bottom: 1rem;
+}
