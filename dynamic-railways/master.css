@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("images.jpg");
+}
+nav{
+  display: flex !important;
+  justify-content: center !important;
+}
+button{
+  margin: 20px !important;
+  cursor: pointer !important;
+  border-radius: 50px !important;
+  background-color: #1a75ff;
+  transition: all 0.5s ease 0s;
+  font-size: 20px;
+}
+button:hover{
+  background-color: #005ce6;
+}
+
+hr{
+  margin-top: 1rem;
+}
+h3{
+  text-align: center;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-weight: 300;
+  font-size: 30px;
+}
+input{
+  margin: 1rem;
+  width:15vw;
+  padding:.5rem;
+}
+.newcontainers{
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
+/*   border: 4px solid #1a75ff; */
+  border-radius: 20px;
+}
+.pass-shadow{
+  position: relative;
+  padding:2rem;
+  background-color:  #4747d1 !important;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+  margin:1rem auto;
+  width:70vw;
+  border: 2px solid red;
+}
+.pass-shadow::after{
+  content: 'PASSENGER TICKET';
+  position: absolute;
+  top:5%;
+}
+.child-shadow{
+  position: relative;
+  background-color: #6699ff !important;
+  margin:1rem auto;
+  width:70vw;
+  border-radius: 10px;
+  border: 2px solid red;
+  padding: 2rem;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+}
+.child-shadow::after{
+  content: 'CHILD TICKET';
+  font-variant: small-caps;
+  position: absolute;
+  top:5%;
+  left:3.65%;
+}
