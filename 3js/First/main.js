@@ -23,9 +23,9 @@ const geometry = new THREE.BoxGeometry( 1, 1, 1 ); // the shape (**args change d
 const material = new THREE.MeshLambertMaterial( { color: 0x9966ff } ); //how it looks
 // const mesh = new THREE.Mesh( geometry, material ); // final product. For multiple final products check line 31
 
-// mesh.position.set(2,2,1); // moving final product (x,y,z)
+// mesh.position.set(0,0,0); // moving final product (x,y,z)
 // mesh.rotation.set(10, 40, 0); // rotating final product (x,y,z)
-// mesh.scale.set(3,1,3); //sizing final product (x,y,z)
+// mesh.scale.set(2,0,0); //sizing final product (x,y,z)
 // above functions applies to the mesh only once. If we wanna keep it going on (animating), define them in the requestAnimationFrame()
 
 //Multiple meshes on random randomly generated
@@ -36,6 +36,7 @@ for (var i=0; i<101; i++){
   mesh.position.y = ((Math.random() - .5) * 10);
   mesh.position.z = ((Math.random() - .5) * 10);
   scene.add( mesh );
+  mesh.rotation.x += .01
 } // so 20 objects
 
 // scene.add( mesh );
@@ -66,7 +67,7 @@ function onMouseMove(event){
   mouse.x = (event.clientX / window.innerWidth) * 2 - 1; //from documentation. Gets x-point of mouse
   mouse.y = -(event.clientY / window.innerHeight) * 2 + 1; //from documentation. Gets y-point of mouse
 
-  console.log('x: ' + mouse.x + ' y: ' + mouse.y);
+  // console.log('x: ' + mouse.x + ' y: ' + mouse.y);
 
   raycaster.setFromCamera(mouse, camera);
 
@@ -79,6 +80,7 @@ function onMouseMove(event){
     tl.to(intersects[i].object.position, .5, {y: 0, ease: Expo.easeOut})
     tl.to(intersects[i].object.position, .5, {z: 0, ease: Expo.easeOut}) // same x,y,z values will take all the objects and place them at the center
     tl.to(intersects[i].object.rotation, .5, {x: .5, ease: Expo.easeOut}, "=-2")
+    console.log(i + ' done');
     // tl.to(intersects[i].object.scale, .5, {x: 1, ease: Expo.easeOut})
   }
 
