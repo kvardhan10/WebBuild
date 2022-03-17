@@ -1,10 +1,10 @@
 var scene = new THREE.Scene();
 
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
-camera.position.z = 850;
+camera.position.z = 2050;
 
 var renderer = new THREE.WebGLRenderer({antialias: true});
-renderer.setClearColor('#000000');
+renderer.setClearColor('#0e0e0e', 1);
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
@@ -60,6 +60,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 function animate() {
 	requestAnimationFrame( animate );
   torus.rotation.y += 0.3
+	mesh.rotation.x += 0.3
 	camera.position.z -= 5
   if (camera.position.z <= -1200){
     camera.position.z = -1200

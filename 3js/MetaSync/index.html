@@ -23,8 +23,8 @@
       </div>
     </div>
     <div id="canvas"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
     <script src="main.js"></script>
 
     <!-- gsap CDN -->
@@ -35,10 +35,9 @@
       var contentAnimate = CSSRulePlugin.getRule('.content::before')
       var h1 = document.querySelector('h1')
       var p = document.querySelector('p')
-      var nav = document.querySelector('nav')
       var tl = gsap.timeline()
 
-      tl.from(contentAnimate, {delay:7, duration: 3, cssRule: {scaleX: 0}})
+      tl.from(contentAnimate, {delay:7.5, duration: 3, cssRule: {scaleX: 0}})
       tl.to(h1, {duration:2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: '20px'})
       tl.to(p, {duration:2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: '20px'}, "=-2")
       </script>

@@ -50,7 +50,13 @@ h1, p{
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   border: 2px solid white;
   transition: all 0.3s ease 0s;
-  }
+}
+
+p{
+  padding:3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
 
 p:hover{
   background-color: white;
