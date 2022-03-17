@@ -1,3 +1,5 @@
+//requires <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+
 var scene = new THREE.Scene();
 
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
