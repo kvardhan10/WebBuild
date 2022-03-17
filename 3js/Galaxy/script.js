@@ -69,14 +69,12 @@ var mouseY = 0
 
 function animate() {
 	requestAnimationFrame( animate );
-	particle.position.x += (mouseX - particle.position.x) * 0.0003;
-	particle.position.y += (-mouseY - particle.position.y) * 0.0003;
+	camera.position.x += (mouseX - camera.position.x) * 0.0003;
+	camera.position.z += (-mouseY - camera.position.z) * 0.003;
 	// moves stars, but out of the screen
-	particle.rotation.y += .001;
-	circle.rotation.x -= 0.0020;
-  circle.rotation.y += 0.0030;
-  skelet.rotation.x += 0.0010;
-  skelet.rotation.y -= 0.0020;
+	particle.rotation.y -= .001;
+  skelet.rotation.y += 0.010;
+  skelet.rotation.z -= 0.020;
 	renderer.render( scene, camera );
 }
 animate();
