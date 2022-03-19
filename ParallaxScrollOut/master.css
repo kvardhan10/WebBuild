@@ -115,7 +115,7 @@ section img{
   position: relative;
   padding: 4rem;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight:550;
 }
 
@@ -138,6 +138,7 @@ section img{
 
 .para button:hover{
   background-color: #7691cb;
+  cursor: pointer;
 }
 
 .para h4{
@@ -204,11 +205,11 @@ section img{
 
 .para p[data-scroll="in"]{
   opacity: 1;
-  transition-delay: 3;
+  transition-delay: 0.5s;
 }
 
 .para button[data-scroll="in"]{
   transform: translateX(0);
   opacity: 1;
-  transition-delay: 3;
+  transition-delay: 0.5s;
 }
