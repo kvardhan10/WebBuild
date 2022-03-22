@@ -246,3 +246,69 @@ p{
   background-size: cover;
   background-position: center;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5rem;
+}
+
+.swiper-slide{
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:  0 0 20px #000000 inset;
+  padding: 2rem;
+  background: url("../img/slider-bg2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-button{
+  top: 60%;
+}
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+}
+.newsletter input{
+    border: 2px solid rgba(0,0,0,0.3);
+    padding: 10px 12rem 10px 5px;
+    margin: auto;
+}
+
+footer{
+  width: 100%;
+  margin-top: 5rem;
+  background-color: #262626;
+  box-shadow:  0 0 20px #000000 inset;
+}
+
+footer a, p{
+  font-family: 'Ubuntu' , sans-serif !important;
+
+}
+
+.footer-contents{
+  padding: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: normal;
+}
+
+.social-links i:hover{
+  border: none;
+  transform: scale(1.2);
+}
+
+.social-links a:hover{
+  border: none;
+}
