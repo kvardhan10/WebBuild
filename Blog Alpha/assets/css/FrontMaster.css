@@ -70,6 +70,17 @@ button span{
   width:26px;
   border-radius: 50%;
   margin-left: 2px;
+  transition: .3s;
+}
+
+.active{
+  background: #85e085;
+}
+
+.active span{
+  background: #ffffff;
+  margin-left: 32px;
+  transition: .3s;
 }
 
 .lamp-container{
@@ -88,17 +99,47 @@ button span{
   top: 97%;
   left: -130%;
   width:700px;
+  opacity: 0;
+  transition: .3s;
 }
 
-/* Probably in JS
-
-button span:hover{
-  background: #ffffff;
-  margin-left: 32px;
+.active-light{
+  opacity: 1;
+  transition: .3s;
 }
 
-button:hover{
-    background: #85e085;
+.lamp-container h1{
+  color: #262626;
+  text-align: center;
+  font-family: 'Poppins';
+  font-variant: small-caps;
+  position: absolute;
+  top:130%;
+  transition: .3s;
 }
 
-*/
+.active-text{
+  color: #ffffff;
+}
+
+.text-container{
+  width: 600px;
+  margin-top: 7%;
+  margin-left: 50%;
+}
+
+.text-container h1{
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.text-container a{
+  text-decoration: none;
+  background: #262626;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
