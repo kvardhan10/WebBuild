@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400&family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.hero{
+  background-color: #343a40;
+  min-height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+}
+
+nav{
+  width: 100%;
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #262626;
+  box-shadow: 0 0px 15px 0px #000;
+  padding: 10px 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo{
+  width: 80px;
+}
+
+a{
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+a:hover{
+  color: #638cff !important;
+  border-bottom: 2px solid #638cff;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  list-style: none;
+  margin: 0 20px;
+}
+
+button{
+  background: #efefef;
+  height: 30px;
+  width: 60px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button span{
+  display: block;
+  background: #999999;
+  height:26px;
+  width:26px;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+.lamp-container{
+  position: absolute;
+  top: -80px;
+  left: 22%;
+  width: 200px;
+}
+
+.lamp{
+  width: 200px;
+}
+
+.light{
+  position: absolute;
+  top: 97%;
+  left: -130%;
+  width:700px;
+}
+
+/* Probably in JS
+
+button span:hover{
+  background: #ffffff;
+  margin-left: 32px;
+}
+
+button:hover{
+    background: #85e085;
+}
+
+*/
